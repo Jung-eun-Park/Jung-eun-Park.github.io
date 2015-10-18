@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+body {background:linear-gradient(to right, black,black, rgb(200,150,150));}
+p    {color:white;}
+p:hover {
+      position :relative;
+      transition: all 0.3s ease-out;
+      animation: bewegung;
+      animation-duration: 4s;}
+
+h1 {font-size:55px}
+h1:hover {color:pink;}
+ul   {
+     list-style-type: none;
+     margin: 0;
+     padding: 0;
+}
+
+#rcorners1 {
+    border-radius: 30px 10px;
+    background: linear-gradient(to right, rgba(0,0,0,0.4), rgba(255,255,255,0.4));
+    padding: 20px;
+    width: 250px;
+    height: 20px;
+}
+
+
+li {
+    display: inline;
+}
+
+a {color: rgb(200,150,150)}
+
+@keyframes test {
+  0%   {width: 180px;}
+  100% {width: 250px;}
+}
+
+@keyframes bewegung {
+  0%   {top: 0px;color:white;}
+  100% {top: 30px;color:red;}
+}
+
+#hoverphoto {
+    width: 570px;
+    height: 150px;
+    background: -moz-radial-gradient(left, rgba(255,255,255,0),rgba(0,0,0,1) 100%),url('/home/vincent/Documents/jungeun2.jpg'),no-repeat;
+    background: -webkit-radial-gradient(left, rgba(255,255,255,0),rgba(0,0,0,1) 100%),url('/home/vincent/Documents/jungeun2.jpg'),no-repeat;
+    background-repeat: no-repeat;
+    background-position: 0% 47%;
+    -webkit-transition: all 8s ease-out;
+    -moz-transition: all 8s ease-out;
+    -o-transition: all 8s ease-out;
+    transition: all 8s ease-out;
+}
+
+#hoverphoto:hover {
+    height: 300px;
+    background-position: 0% 40%;
+}
+
+</style>
+
+</style>
+<title>Jung-eun Park</title>
+</head>
+<body>
+
+<ul id="rcorners1">
+  <li><a style="font-size: 20px" href="a.html">Home</a></li>
+  <li><a href="about.html">Vita</a></li>
+  <li><a href="music.html">Music</a></li>
+  <li><a href="#about">About</a></li>
+</ul>
+
+<div id="hoverphoto">
+<h1 style="opacity:0.6;"><br> Jung-eun Park </h1>
+</div>
+
+</body>
+</html>
