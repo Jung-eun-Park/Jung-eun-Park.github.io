@@ -11,8 +11,7 @@ h1 {font-size:54px;
 h1:hover {color:pink;}
 ul   {
      list-style-type: none;
-     margin: 0;
-     padding: 0;
+    /* margin: 0;*/
 }
 
 #rcorners1 {
@@ -29,7 +28,7 @@ li {
     padding: 20px;
 }
 
-a {color: rgb(200,150,150)}
+a {color: rgb(200,150,150);text-decoration: none;}
 
 @keyframes test {
   0%   {width: 180px;}
@@ -58,6 +57,8 @@ a {color: rgb(200,150,150)}
     height: 300px;
     background-position: 0% 40%;
 }
+#hovercolor {color:rgba(200,100,100,1);padding-top:30px;}
+#hovercolor:hover {color: rgb(102, 0, 51);}
 
 #rightelement {float:right;padding-right:130px;}
 
@@ -68,14 +69,14 @@ a {color: rgb(200,150,150)}
 </head>
 <body>
 <ul id="rcorners1">
-  <li><a style="font-size: 20px" href="index.html">Home</a></li>
-  <li><a href="about.html">Vita</a></li>
-  <li><a href="music.html">Music</a></li>
-  <li><a href="#about">About</a></li>
+  <li><a style="font-size: 20px" href="index.html"><b>Home</b></a></li>
+  <li><a href="about.html"><b>Vita</b></a></li>
+  <li><a href="music.html"><b>Music</b></a></li>
+  <li><a href="#about"><b>About</b></a></li>
 </ul>
 
 <div id="rightelement">
-  <p style="color:black">
+  <p id="hovercolor">
     <b>Alter Ego</b> (2013) <br>
     for ensemble with electronics
   </p>
@@ -83,6 +84,22 @@ a {color: rgb(200,150,150)}
    <source src="audio/Alter_Ego.mp3" type="audio/mpeg">
  Your browser does not support the audio element.
  </audio>
+ <p id="hovercolor">
+   <b>Alter Ego Trio Version</b> (2014) <br>
+   for Flute, Cello and Piano
+ </p>
+ <audio controls>
+  <source src="audio/Alter_Ego_Trio.mp3" type="audio/mpeg">
+Your browser does not support the audio element.
+</audio>
+<p id="hovercolor">
+  <b>Krieg</b> (2014) <br>
+  for Brassquintet
+</p>
+<audio controls>
+ <source src="audio/Krieg.mp3" type="audio/mpeg">
+Your browser does not support the audio element.
+</audio>
 </div>
 
   <div id="hoverphoto">
@@ -92,6 +109,7 @@ a {color: rgb(200,150,150)}
 <p style="color:grey;font-style: italic;">
   Composer, born 1986 in Seoul, South Korea.
 </p>
+
 
 
 </body>
