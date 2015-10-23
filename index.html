@@ -4,10 +4,11 @@
 <meta charset="UTF-8">
 <style>
 body {background:linear-gradient(to right, black,black, rgb(200,150,150));}
-p    {color:white;}
+p    {color:white;padding-left:42px}
 
 h1 {font-size:54px;
-    padding-left:10px}
+    padding-left:50px;
+    padding-top:80px}
 h1:hover {color:pink;}
 ul   {
      list-style-type: none;
@@ -18,7 +19,7 @@ ul   {
     border-radius: 30px 10px;
     background: linear-gradient(to right, rgba(0,0,0,0.4), rgba(255,255,255,0.4),black);
     padding: 20px;
-    width: 400px;
+    width: 600px;
     height: 20px;
 }
 
@@ -30,37 +31,27 @@ li {
 
 a {color: rgb(200,150,150);text-decoration: none;}
 
-@keyframes test {
-  0%   {width: 180px;}
-  100% {width: 250px;}
-}
-
-@keyframes bewegung {
-  0%   {top: 0px;color:white;}
-  100% {top: 30px;color:red;}
-}
-
 #hoverphoto {
     width: 570px;
-    height: 150px;
-    background: -moz-radial-gradient(left, rgba(255,255,255,0),rgba(0,0,0,1) 100%),url('images/jungeun2.jpg'),no-repeat;
+    height: 220px;
+    background: -moz-radial-gradient(left, rgba(0,0,0,0),rgba(0,0,0,1) 100%),url('images/jungeun2.jpg'),no-repeat;
     background: -webkit-radial-gradient(left, rgba(255,255,255,0),rgba(0,0,0,1) 100%),url('images/jungeun2.jpg'),no-repeat;
     background-repeat: no-repeat;
-    background-position: 0% 47%;
-    -webkit-transition: all 8s ease-out;
-    -moz-transition: all 8s ease-out;
-    -o-transition: all 8s ease-out;
-    transition: all 8s ease-out;
+    background-position: 650% 42%;
+    -webkit-transition: all 2s ease-out;
+    -moz-transition: all 2s ease-out;
+    -o-transition: all 2s ease-out;
+    transition: all 2s ease-out;
 }
 
 #hoverphoto:hover {
-    height: 300px;
-    background-position: 0% 40%;
+    height: 500px;
+    background-position: 650% 40%;
 }
-#hovercolor {color:rgba(200,100,100,1);padding-top:30px;}
+#hovercolor {color:rgba(200,100,100,1);padding-top:20px;}
 #hovercolor:hover {color: rgb(102, 0, 51);}
 
-#rightelement {float:right;padding-right:130px;}
+#rightelement {float:right;padding-right:130px;margin-top:-50px}
 
 </style>
 
@@ -70,9 +61,10 @@ a {color: rgb(200,150,150);text-decoration: none;}
 <body>
 <ul id="rcorners1">
   <li><a style="font-size: 20px" href="index.html"><b>Home</b></a></li>
-  <li><a href="about.html"><b>Vita</b></a></li>
+  <li><a href="about.html"><b>Biography</b></a></li>
+  <li><a href="events.html"><b>Events</b></a></li>
   <li><a href="music.html"><b>Music</b></a></li>
-  <li><a href="#about"><b>About</b></a></li>
+  <li><a href="contact.html"><b>Contact</b></a></li>
 </ul>
 
 <div id="rightelement">
@@ -85,11 +77,11 @@ a {color: rgb(200,150,150);text-decoration: none;}
  Your browser does not support the audio element.
  </audio>
  <p id="hovercolor">
-   <b>Alter Ego Trio Version</b> (2014) <br>
-   for Flute, Cello and Piano
+   <b>Rose</b> (2014) <br>
+   for Flute, Clarinet, Trumpet and Viola
  </p>
  <audio controls>
-  <source src="audio/Alter_Ego_Trio.mp3" type="audio/mpeg">
+  <source src="audio/Rose.mp3" type="audio/mpeg">
 Your browser does not support the audio element.
 </audio>
 <p id="hovercolor">
@@ -98,6 +90,14 @@ Your browser does not support the audio element.
 </p>
 <audio controls>
  <source src="audio/Krieg.mp3" type="audio/mpeg">
+Your browser does not support the audio element.
+</audio>
+<p id="hovercolor">
+  <b>Joong-Dok</b> (2013) <br>
+  Tape
+</p>
+<audio controls>
+ <source src="audio/Joong_Dok.mp3" type="audio/mpeg">
 Your browser does not support the audio element.
 </audio>
 </div>
